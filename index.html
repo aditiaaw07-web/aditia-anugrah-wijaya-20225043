@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ADITIA ANUGRAH WIJAYA Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">NS</div>
+      <div>
+        <h1>ADITIA ANUGRAH WIJAYA Shop</h1>
+        <p class="muted">E-commerce sederhana (BY ADIT JS)</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input id="searchInput" type="search" placeholder="Cari produk..." />
+      <select id="categorySelect">
+        <option value="all">Semua kategori</option>
+      </select>
+      <button id="openCartBtn" class="btn">
+        🛒 Keranjang <span id="cartCount" class="badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Produk</h2>
+      <div id="productGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- CART DRAWER -->
+  <aside id="cartDrawer" class="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <h2>Keranjang</h2>
+      <button id="closeCartBtn" class="icon-btn" aria-label="Tutup">✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="drawer-footer">
+      <div class="row">
+        <span class="muted">Subtotal</span>
+        <strong id="cartTotal">Rp 0</strong>
+      </div>
+
+      <button id="checkoutBtn" class="btn btn-primary">Checkout</button>
+      <button id="clearCartBtn" class="btn btn-ghost">Kosongkan keranjang</button>
+
+      <p class="hint muted">
+        *Checkout hanya simulasi (dummy). Data keranjang disimpan di browser (localStorage).
+      </p>
+    </div>
+  </aside>
+
+  <div id="backdrop" class="backdrop" hidden></div>
+
+  <script src="app.js"></script>
+  <!-- Floating WhatsApp CS -->
+<a
+  id="waCsBtn"
+  class="wa-float"
+  href="https://wa.me/6289509725627?text=Halo%20CS%20ADITIA ANUGRAH WIJAYA%20Shop%2C%20saya%20ingin%20bertanya%20tentang%20produk%20yang%20dijual."
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat CS WhatsApp"
+>
+  💬 WA CS
+</a>
+</body>
+</html>
